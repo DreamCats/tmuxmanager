@@ -287,3 +287,4 @@ MIT License
 - [DESIGN.md](./DESIGN.md) - 详细设计文档
 - [QUICKSTART.md](./QUICKSTART.md) - 快速开始指南
 - [TMUX_GUIDE.md](./TMUX_GUIDE.md) - tmux 快捷键完整指南
+# v1.0.0
