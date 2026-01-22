@@ -22,7 +22,17 @@ tmux 会话是容器，tmx 是其中的管理界面。这种设计：
 
 ## 安装
 
-### 从源码编译
+### 方式 1：使用 go install（推荐）
+
+```bash
+# 直接安装到 $GOPATH/bin
+go install github.com/DreamCats/tmuxmanager/cmd/tmx@latest
+
+# 确保 $GOPATH/bin 在 PATH 中
+export PATH=$PATH:$(go env GOPATH)/bin
+```
+
+### 方式 2：从源码编译
 
 ```bash
 # 克隆仓库
@@ -34,6 +44,14 @@ go build -o tmx ./cmd/tmx
 
 # 安装到 PATH
 sudo mv tmx /usr/local/bin/
+```
+
+### 方式 3：使用安装脚本
+
+```bash
+git clone https://github.com/DreamCats/tmuxmanager.git
+cd tmuxmanager
+./install.sh
 ```
 
 ### 配置 tmux 快捷键（推荐）
